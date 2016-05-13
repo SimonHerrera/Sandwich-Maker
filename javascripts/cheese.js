@@ -19,4 +19,4 @@ var SandwichMaker = (function(maker) {
 
   return maker;             //returns an object  -cheeseTypes is not added as a property, local scope only
 
-})(SandwichMaker);
+})(SandwichMaker || {});
