@@ -19,7 +19,7 @@ var SandwichMaker = (function(maker) {      //'maker' defined here - passing in 
 
   // Return the new, augmented object with the new method on it
   return maker;       //here passed on with new info - returning an object
-})(SandwichMaker);    //this is the org SandwichMake defined back on SandwichMaker.js the var Sandwichpassing a value into the function
+})(SandwichMaker || {});    //this is the org SandwichMake defined back on SandwichMaker.js the var Sandwichpassing a value into the function
 //take the org and pass it through so this augmenter adds to this one
 //SandwichMaker(SandwichMaker) - defining it and then calling it, line above
 //maker does not exist out here
